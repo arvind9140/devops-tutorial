@@ -13,7 +13,7 @@ node {
     stage('Build image') {
         // This builds the actual image; synonymous to docker build on the command line
         try {
-            app = docker.build("arvind9140/admin")
+            app = docker.build("arvind9140/Arvind")
         } catch (e) {
             error "Failed to build Docker image: ${e.message}"
         }
